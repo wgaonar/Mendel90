@@ -26,9 +26,17 @@ card_offset = 11.5;
 pi_card_clearance = 20;
 
 module raspberry_pi() {
-    vitamin("RASPBERY: Raspberry PI model B");
+    vitamin("RASPBERRY: Raspberry PI model B");
     color("green")
         rotate([0, 0, 90])
             translate([-pi_length / 2, - pi_width / 2, 0])
                 import("../imported_stls/R-Pi.stl");
+}
+
+module raspberry_pi2() {
+    vitamin("RASPBERRY: Raspberry PI 2");
+    color("green")
+        rotate([0, 0, -90])
+            translate([-pi_length / 2, - pi_width / 2, pi_thickness])
+                import("../imported_stls/R-Pi2.stl");
 }
