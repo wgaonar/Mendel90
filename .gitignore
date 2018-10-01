@@ -1,5 +1,6 @@
 *.pyc
 *.log
+*.DS_Store
 scad/conf/machine.scad
 scad/stl.scad
 scad/bom.scad
